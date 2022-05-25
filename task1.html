@@ -1,0 +1,74 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+    <title>Лабораторная работа 2</title>
+<script defer src="main.js"></script><script defer src="task1.js"></script><script defer src="task2.js"></script></head>
+<body>
+    <header class="header">
+        <img class="image-logo" src="logo-mobile.png">
+        <div class="text-logo">
+            <br>
+            <div class="university">НОВОСИБИРСКИЙ ГОСУДАРСТВЕННЫЙ ТЕХНИЧЕСКИЙ УНИВЕРСИТЕТ</div>
+            <div class="chair">КАФЕДРА АВТОМАТИЗИРОВАННЫХ СИСТЕМ УПРАВЛЕНИЯ</div>
+        </div>
+    </header>
+    <div class="tasks" style="margin-bottom: 30px;">
+        <a href ="index.html">На главную</a>
+    </div>
+    <div class="main-container">
+        <div class="text-logo task-name">Задание 2. Слайдер</div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="slider-img" src="src/images/image1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="slider-img" src="src/images/image2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="slider-img" src="src/images/image3.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="slider-img" src="src/images/image4.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="slider-img" src="src/images/image5.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img class="slider-img" src="src/images/image6.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        
+        <div class="calculator">
+            <div class="text-logo task-name">Задание 3. Калькулятор вкладов</div>
+            <div class="application">
+                <div class="control">
+                    <select class="select-type" id="type">
+                        <option value="" disabled selected>Вид вклада</option>
+                        <option value="1">Пополняемый</option>
+                        <option value="2">Срочный</option>
+                    </select>
+                    <select class="select-duration" id="duration">
+                        <option value="" disabled selected>Срок вклада</option>
+                    </select>
+                    <input type="number" class="money-input" id="money" placeholder="Сумма, руб">
+                    <button id="calculate">Рассчитать</button>
+                </div>
+                <div class="result-window">
+                    <textarea id="result-area" cols="30" rows="10" readonly></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</body>
+</html>
